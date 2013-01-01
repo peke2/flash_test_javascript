@@ -19,9 +19,9 @@ package
 
 			//	javasscriptからのコールバックで「SecurityDomain 'null' が互換性のないコンテキスト」エラーが出た場合の対策
 			var	loader:Loader = new Loader();
-			//Security.allowDomain("*");
-			trace(loader.contentLoaderInfo.url);
-			Security.allowDomain(loader.contentLoaderInfo.url);
+			Security.allowDomain("*");
+			//trace(loader.contentLoaderInfo.url);
+			//Security.allowDomain(loader.contentLoaderInfo.url);
 			//Security.allowDomain(this.root.contentLoaderInfo.url);
 
 			var	test:TestJavascript = new TestJavascript(label);
