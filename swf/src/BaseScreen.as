@@ -1,7 +1,7 @@
 package
 {
 	import flash.display.*;
-	import flash.text.TextField;
+	import flash.text.*;
 	import flash.display.Loader;
 	import flash.system.Security;
 	
@@ -14,6 +14,7 @@ package
 			var	base : Sprite = new Sprite();
 			var	label : TextField = new TextField();
 			label.text = "ラベル表示";
+			label.autoSize = TextFieldAutoSize.LEFT;
 			base.addChild(label);
 			addChild(base);
 
