@@ -27,6 +27,7 @@ package
 
 			var	test:TestJavascript = new TestJavascript(label);
 			test.callFunction();
+			test.passArray();
 		}
 
 	}

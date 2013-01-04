@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0014)about:internet -->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">	
     <!-- 
     Smart developers always View Source. 
     
@@ -65,6 +65,24 @@
 				var	element = document.getElementById("dummy");
 				element.innerHTML = "dummy";
 			}
+
+			//	配列を渡す
+			function	passArray()
+			{
+				var	list = [];
+				//	1つの配列として連結されているっぽい
+				list.push(["a", "b"]);
+				list.push(["3", "7"]);
+				list.push(["nnn", "ccc", "www"]);
+			/*
+				list.push("a");
+				list.push("3");
+				list.push("nnn");
+			*/
+				document["javascript"].passArrayCallback(list);
+			}
+
+
 		</script>
 
 
